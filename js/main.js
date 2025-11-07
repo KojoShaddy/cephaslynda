@@ -214,18 +214,27 @@
 	};
 
 	
+	// Button reactivity: add .btn-active on mousedown/touchstart, remove on mouseup/mouseleave/touchend
 	$(function(){
-		mobileMenuOutsideClick();
-		parallax();
-		offcanvasMenu();
-		burgerMenu();
-		contentWayPoint();
-		dropdown();
-		testimonialCarousel();
-		goToTop();
-		loaderPage();
-		counter();
-		counterWayPoint();
+			mobileMenuOutsideClick();
+			parallax();
+			offcanvasMenu();
+			burgerMenu();
+			contentWayPoint();
+			dropdown();
+			testimonialCarousel();
+			goToTop();
+			loaderPage();
+			counter();
+			counterWayPoint();
+
+			// Add reactivity to all .btn elements
+			$(document).on('mousedown touchstart', '.btn', function() {
+				$(this).addClass('btn-active');
+			});
+			$(document).on('mouseup mouseleave touchend', '.btn', function() {
+				$(this).removeClass('btn-active');
+			});
 	});
 
 
