@@ -5666,7 +5666,7 @@ button.close {
   left: 50%;
   margin-left: -11px;
   border-bottom-width: 0;
-  border-top-color: #999999;
+  border-top-color: #00674F;
   border-top-color: rgba(0, 0, 0, 0.25);
   bottom: -11px;
 }
@@ -5682,7 +5682,7 @@ button.close {
   left: -11px;
   margin-top: -11px;
   border-left-width: 0;
-  border-right-color: #999999;
+  border-right-color: #00674F;
   border-right-color: rgba(0, 0, 0, 0.25);
 }
 .popover.right > .arrow:after {
@@ -5696,7 +5696,7 @@ button.close {
   left: 50%;
   margin-left: -11px;
   border-top-width: 0;
-  border-bottom-color: #999999;
+  border-bottom-color: #00674F;
   border-bottom-color: rgba(0, 0, 0, 0.25);
   top: -11px;
 }
@@ -5712,7 +5712,7 @@ button.close {
   right: -11px;
   margin-top: -11px;
   border-right-width: 0;
-  border-left-color: #999999;
+  border-left-color: #00674F;
   border-left-color: rgba(0, 0, 0, 0.25);
 }
 .popover.left > .arrow:after {

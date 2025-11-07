@@ -6,9 +6,9 @@
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>SK</title>
+	<title>Cephas & Ekua</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Shadrack and Kate's wedding" />
+	<meta name="description" content="Cephas & Lynda's wedding Ceremony" />
     <meta name="keywords" content="Special wedding Invitation Site"/>
 	<meta name="author" content="wedding" />
 
@@ -42,6 +42,98 @@
 
 	<!-- Theme style  -->
 	<link rel="stylesheet" href="css/style.css">
+	<style>
+	  :root{ --emerald: #00674F; }
+	  /* Emerald theme overrides for index page */
+	  .fh5co-heading h2,
+	  .fh5co-heading p,
+	  .couple-half h3,
+	  .desc-groom h3,
+	  .desc-bride h3,
+	  .list-group-item strong {
+	    color: var(--emerald);
+	  }
+	  .heart i {
+	    color: var(--emerald);
+	    font-size: 28px;
+	  }
+	  .btn.btn-default {
+	    background: var(--emerald);
+	    border-color: var(--emerald);
+	    color: #fff;
+	  }
+	  .btn.btn-default:hover {
+	    background: #005a42;
+	    border-color: #005a42;
+	    color: #fff;
+	  }
+	  .list-group-item { border-left: 6px solid var(--emerald); margin-bottom: 8px; }
+	  #fh5co-footer small a { color: var(--emerald); }
+	  /* Faint watermark logo over background images (header and any .fh5co-bg sections) */
+	  #fh5co-header,
+	  .fh5co-bg { position: relative; overflow: hidden; }
+	  #fh5co-header::before,
+	  .fh5co-bg::before {
+	    content: "";
+	    position: absolute;
+	    inset: 0;
+	    background-image: url('images/logo.png');
+	    background-repeat: no-repeat;
+	    background-position: center center;
+	    background-size: 20%;
+	    opacity: 0.06; /* very faint */
+	    pointer-events: none;
+	    z-index: 1;
+	  }
+	  /* ensure overlay and content sit above the watermark */
+	  #fh5co-header .overlay,
+	  .fh5co-bg .overlay { position: relative; z-index: 2; }
+	  #fh5co-header .display-tc,
+	  .fh5co-bg .display-tc { position: relative; z-index: 3; }
+		/* Go-to-top (floating) button styling - emerald themed */
+		.gototop.js-top {
+			position: fixed;
+			right: 20px;
+			bottom: 20px;
+			z-index: 9999;
+		}
+		.gototop.js-top a.js-gotop {
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			width: 46px;
+			height: 46px;
+			border-radius: 50%;
+			background: var(--emerald);
+			color: #fff;
+			box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+			transition: transform .18s ease, opacity .18s ease, background .18s;
+			opacity: 0.98;
+		}
+		.gototop.js-top a.js-gotop:hover { transform: translateY(-3px); background: #005a42; }
+		/* hidden state (script may toggle this) */
+		.gototop.js-top.hidden { opacity: 0; visibility: hidden; pointer-events: none; }
+	</style>
+		<style>
+		  /* Compact footer: reduce vertical spacing so footer doesn't feel too open */
+		  #fh5co-footer {
+		    padding-top: 16px !important;
+		    padding-bottom: 18px !important;
+		    background-color: transparent; /* keep existing look */
+		  }
+		  #fh5co-footer .copyright { padding-top: 6px; padding-bottom: 6px; }
+		  #fh5co-footer .block { margin: 0; padding: 0; display: block; line-height: 1.3; }
+		  /* Slightly reduce footer font size to maintain compactness */
+		  #fh5co-footer small { font-size: 12px; }
+		</style>
+			<style>
+			  /* Ensure the 'Locate venue on the map' heading is readable on the dark background */
+			  #fh5co-started .fh5co-heading h2,
+			  #fh5co-started .fh5co-heading p {
+			    color: #ffffff !important;
+			    text-shadow: 0 1px 2px rgba(0,0,0,0.45);
+			  }
+			</style>
 
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
@@ -50,7 +142,7 @@
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
 
-	<link rel="icon" href="./images/logo.png" type="image/png">
+	<link rel="icon" href="#" type="image/png">
 
 	</head>
 	<body>
@@ -62,7 +154,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-2">
-					<div id="fh5co-logo"><a href="https://skay.one/">#JesusIsLord<strong>.</strong></a></div>
+					<div id="fh5co-logo"><a href="#">#CEGoddid<strong></strong></a></div>
 				</div>
 				<div class="col-xs-10 text-right menu-1">
 
@@ -79,10 +171,10 @@
 				<div class="col-md-8 col-md-offset-2 text-center">
 					<div class="display-t">
 						<div class="display-tc animate-box" data-animate-effect="fadeIn">
-							<h1>Shadrack &amp; Kate</h1>
+							<h1>Cephas &amp; Ekua</h1>
 							<h2>We Are Getting Married</h2>
 							<div class="simply-countdown simply-countdown-one"></div>
-							<a onclick="startAudio(); scrollToDiv();" class="btn btn-default btn-sm">Save the date</a>
+							<a href="programmes.html" onclick="startAudio();" class="btn btn-default btn-sm">PROGRAMME OUTLINE</a>
 						</div>
 					</div>
 				</div>
@@ -96,8 +188,8 @@
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
 					<h2>Hello!</h2>
 					<p>We invite you to our wedding</p>
-					<h3>19th October, 2024</h3>
-					<h3>St. Martin De Poress Dansoman</h3>
+					<h3>Friday 28th November, 2025</h3>
+					<h3>Action Worship Center, Destiny Chapel - East Airport</h3>
 				</div>
 			</div>
 			<div class="couple-wrap animate-box">
@@ -106,7 +198,7 @@
 						<img src="images/groom.jpg" alt="groom" class="img-responsive">
 					</div>
 					<div class="desc-groom">
-						<h3>Shadrack Odametey</h3>
+						<h3>Cephas Kofi Bosomafi Baidoo</h3>
 					</div>
 				</div>
 				<p class="heart text-center"><i class="icon-heart2"></i></p>
@@ -115,7 +207,7 @@
 						<img src="images/bride.jpg" alt="groom" class="img-responsive">
 					</div>
 					<div class="desc-bride">
-						<h3>Kate Dzamina</h3>
+						<h3>Lynda Ekua Biamah Dankyi</h3>
 					</div>
 				</div>
 			</div>
@@ -145,12 +237,12 @@
 									</div>
 									<div class="event-col">
 										<i class="icon-calendar"></i>
-										<span>Saturday 19th</span>
-										<span>October, 2024</span>
+										<span>Friday 28th</span>
+										<span>November, 2025</span>
 									</div>
-									<p>Location: St. Martin De Poress Dansoman</p>
+									<p>Location: AWC, Destiny Chapel - East Airport</p>
 									<span>RSVP:</span>
-									<span>Belinda - 0243216920</span>
+									<span>Godfred - 0547100070</span>
 								</div>
 							</div>
 							<div class="col-md-6 col-sm-6 text-center">
@@ -162,12 +254,12 @@
 									</div>
 									<div class="event-col">
 										<i class="icon-calendar"></i>
-										<span>Saturday 19th</span>
-										<span>October, 2024</span>
+										<span>Friday 28th</span>
+										<span>November, 2025</span>
 									</div>
-									<p>Location: St. Martin De Poress Dansoman</p>
+									<p>Location: St. Giles Event Centre, East Airport</p>
 									<span>RSVP:</span>
-									<span>Belinda - 0243216920</span>											
+									<span>Frank - 0247667190</span>											
 								</div>
 							</div>
 						</div>
@@ -244,7 +336,7 @@
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
 					<span>Our Memories</span>
-					<h2>Wedding Gallery</h2>
+					<h2>Pre-Wedding Gallery</h2>
 					<p>“Love recognises no barriers, it jumps hurdles, leaps fences, penetrates walls to arrive at its destination, full of hope.”</p>
 				</div>
 			</div>
@@ -332,41 +424,16 @@
 		<div class="container" >
 			<div class="row animate-box">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>Are You Attending?</h2>
-					<p>Locate venue on the map.</p>
+					 <h2>Locate venue on the map</h2> 
+					<!--<p>Locate venue on the map.</p>-->
 				</div>
 			</div>
 
 			<div class="row animate-box" id="targetDiv">
 				<div class="col-md-8 col-md-offset-2">  <!-- Center the entire form using offset -->
-					<form class="form-inline" action="contact-form-handler.php" method="post" role="form">
-						<div class="row">  <!-- Added row to group the form fields -->
-							<div class="col-md-3 col-sm-4">
-								<div class="form-group">
-									<label for="name" class="sr-only">Name</label>
-									<input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
-								</div>
-							</div>
-							<div class="col-md-3 col-sm-4">
-								<div class="form-group">
-									<label for="number" class="sr-only">Phone Number</label>
-									<input type="number" class="form-control" id="number" name="number" placeholder="Phone Number" required>
-								</div>
-							</div>
-							<div class="col-md-3 col-sm-4">
-								<div class="form-group">
-									<label for="email" class="sr-only">Email</label>
-									<input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
-								</div>
-							</div>
-							<div class="col-md-3 col-sm-4">
-								<button type="submit" class="btn btn-default btn-block">Submit</button>
-							</div>
-						</div>
-					</form>					
-			
+
 					<!-- Google Maps iframe remains unchanged -->
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.0435036107247!2d-0.26425960000000004!3d5.5605708!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf9780643ecafb%3A0xd18fe368b02ddd27!2sSt.%20Martin%20de%20Porres%20School!5e0!3m2!1sen!2sgh!4v1725760164821!5m2!1sen!2sgh" width="746" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.6309507835063!2d-0.14871769999999998!3d5.6213806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf84cb3b162057%3A0xcd6c227a1fb9a52b!2sAction%20Worship%20Center%2C%20Destiny%20Chapel%20-%20East%20Airport!5e0!3m2!1sen!2sgh!4v1762471410596!5m2!1sen!2sgh" width="746" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 				</div>
 			</div>
 			
@@ -380,8 +447,8 @@
 			<div class="row copyright">
 				<div class="col-md-12 text-center">
 					<p>
-						<small class="block">&copy; 2024. All Rights Reserved.</small> 
-						<small class="block">Made with ❤ by <a href="https://www.sprynix.com/" target="_blank">Sprynix</a></a></small>
+						<small class="block">&copy; 2025. All Rights Reserved.</small> 
+						<small class="block">Made with ❤ by <a href="https://kojoshaddy.pages.dev/" target="_blank">Kojo Shaddy</a></a></small>
 					</p>
 					<!--<p>
 						<ul class="fh5co-social-icons">
@@ -428,7 +495,7 @@
 
 	<script>
 // Insert your target date and time (YYYY-MM-DDTHH:MM:SS format)
-var targetDate = new Date('2024-10-19T12:00:00');
+var targetDate = new Date('2025-11-28T00:00:00');
 
 // Calculate the difference between the target date and the current time
 var now = new Date();
@@ -471,16 +538,32 @@ $('#simply-countdown-losange').simplyCountdown({
 <!-- <button onclick="startAudio()">Play Audio</button> -->
 
 <script>
-	// Set initial volume and autoplay when the page loads
+	// Set initial volume and try to autoplay when the page loads
 	document.addEventListener('DOMContentLoaded', function() {
-	  var audio = document.getElementById('background-audio');
-	  audio.volume = 0.05; // Set volume
+		var audio = document.getElementById('background-audio');
+		if (audio) {
+			audio.volume = 0.10;
+			// Try to play immediately (may be blocked by browser)
+			var playPromise = audio.play();
+			if (playPromise !== undefined) {
+				playPromise.catch(function() {
+					// If autoplay is blocked, play on first user interaction
+					var unlock = function() {
+						audio.play();
+						document.removeEventListener('click', unlock);
+						document.removeEventListener('keydown', unlock);
+					};
+					document.addEventListener('click', unlock);
+					document.addEventListener('keydown', unlock);
+				});
+			}
+		}
 	});
 
-	// Function to play audio when button is clicked
+	// Function to play audio when button is clicked (for manual triggers)
 	function startAudio() {
-	  var audio = document.getElementById('background-audio');
-	  audio.play(); // Play the audio
+		var audio = document.getElementById('background-audio');
+		if (audio) audio.play();
 	}
 </script>
 
