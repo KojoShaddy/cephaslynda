@@ -1,0 +1,56 @@
+/* Mobile-friendly countdown styles */
+@media screen and (max-width: 768px) {
+  /* Make countdown container full width but with padding */
+  .simply-countdown {
+    padding: 0 10px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  /* Adjust individual counter boxes */
+  .simply-countdown > .simply-section {
+    margin: 0 5px;
+    width: auto;
+    min-width: 65px;
+    height: auto;
+    padding: 10px 5px;
+  }
+
+  /* Make numbers more visible but compact */
+  .simply-countdown > .simply-section .simply-amount {
+    font-size: 28px;
+    line-height: 1.2;
+    margin-bottom: 0;
+  }
+
+  /* Adjust label size for readability */
+  .simply-countdown > .simply-section .simply-word {
+    font-size: 11px;
+    font-weight: 500;
+    margin-top: 2px;
+  }
+
+  /* Ensure header content stays properly spaced */
+  #fh5co-header .display-tc {
+    padding: 2em 15px;
+  }
+}
+
+/* Extra small devices */
+@media screen and (max-width: 480px) {
+  .simply-countdown > .simply-section {
+    margin: 0 3px;
+    min-width: 55px;
+    padding: 8px 5px;
+  }
+
+  .simply-countdown > .simply-section .simply-amount {
+    font-size: 24px;
+  }
+
+  .simply-countdown > .simply-section .simply-word {
+    font-size: 10px;
+  }
+}

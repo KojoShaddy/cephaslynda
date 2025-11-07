@@ -1,3 +1,9 @@
+.btn-active {
+  background: #005a42 !important;
+  border-color: #005a42 !important;
+  color: #fff !important;
+  transition: 0.1s;
+}
 @font-face {
   font-family: 'icomoon';
   src: url("../fonts/icomoon/icomoon.eot?srf3rx");
