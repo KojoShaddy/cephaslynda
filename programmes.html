@@ -243,24 +243,27 @@
           <div class="col-md-8 col-md-offset-2">
             <ul class="list-group programme-list" style="font-size:18px;">
               <li class="list-group-item" data-start="10:00"><strong>10:00 AM</strong> <span class="prog-text">Arrival of Guests</span></li>
-              <li class="list-group-item" data-start="10:30"><strong>10:30 AM</strong> <span class="prog-text">Opening Prayer (Fred Mensah)</span></li>
-              <li class="list-group-item" data-start="10:40"><strong>10:40 AM</strong> <span class="prog-text">Praise & Worship – Choir (Passion)</span></li>
-              <li class="list-group-item" data-start="11:00"><strong>11:00 AM</strong> <span class="prog-text">Purpose of Gathering (MC)</span></li>
-              <li class="list-group-item" data-start="11:05"><strong>11:05 AM</strong> <span class="prog-text">Bridal Procession (Min. KK)</span></li>
-              <li class="list-group-item" data-start="11:10"><strong>11:10 AM</strong> <span class="prog-text">Exchange of Vows (Rev. Arthur)</span></li>
-              <li class="list-group-item" data-start="11:30"><strong>11:30 AM</strong> <span class="prog-text">Solo (Mrs. Agyapong)</span></li>
-              <li class="list-group-item" data-start="11:45"><strong>11:45 AM</strong> <span class="prog-text">Exhortation / Short Word (Rev. Asare)</span></li>
-              <li class="list-group-item" data-start="12:20"><strong>12:20 PM</strong> <span class="prog-text">Signing of Certificate</span></li>
-              <li class="list-group-item" data-start="12:25"><strong>12:25 PM</strong> <span class="prog-text">Introduction of Couple (MC / Best Man)</span></li>
-              <li class="list-group-item" data-start="00:00"><strong>TIME</strong> <span class="prog-text">Announcement (Best Man)</span></li>
-              <li class="list-group-item" data-start="00:00"><strong>TIME</strong> <span class="prog-text">Closing Remarks (Rev. Arthur)</span></li>
+              <li class="list-group-item" data-start="10:30"><strong>10:30 AM</strong> <span class="prog-text">Arrival of Groom with Background Music</span></li>
+              <li class="list-group-item" data-start="10:35"><strong>10:35 AM</strong> <span class="prog-text">Arrival of Bride and Bridal March - Minister Kwasi Kumi</span></li>
+              <li class="list-group-item" data-start="10:35"><strong>10:35 AM</strong> <span class="prog-text">Opening Prayer - Rev. Gabriel Aryeetey </span></li>
+              <li class="list-group-item" data-start="10:45"><strong>10:45 AM</strong> <span class="prog-text">Purpose of Gathering - MC (Rev. Kwabena Agyapong) 🎤</span></li>
+              <li class="list-group-item" data-start="10:50"><strong>10:50 AM</strong> <span class="prog-text">Praise and Worship - Passion</span></li>
+              <li class="list-group-item" data-start="11:10"><strong>11:10 AM</strong> <span class="prog-text">Exchange of Vows - Rev. Dr. Emmanuel Arthur</span></li>
+              <li class="list-group-item" data-start="11:30"><strong>11:30 AM</strong> <span class="prog-text">Prayer for Couple - All Ministers Present</span></li>
+              <li class="list-group-item" data-start="11:40"><strong>11:40 AM</strong> <span class="prog-text">Song - Mrs. Jennifer Anima Agyapong</span></li>
+              <li class="list-group-item" data-start="11:50"><strong>11:50 AM</strong> <span class="prog-text">Sermon - Rev. Kingsley Asare </span></li>
+              <li class="list-group-item" data-start="12:25"><strong>12:25 PM</strong> <span class="prog-text">Signing of Certificate - Rev. Dr. Emmanuel Arthur</span></li>
+              <li class="list-group-item" data-start="12:30"><strong>12:30 PM</strong> <span class="prog-text">Offertory - Rev. Kwabena Agyapong</span></li>
+              <li class="list-group-item" data-start="12:35"><strong>12:35 PM</strong> <span class="prog-text">Introduction of Couple - Best Man</span></li>
+              <li class="list-group-item" data-start="12:40"><strong>12:40 PM</strong> <span class="prog-text">Announcement - Best Man</span></li>
+              <li class="list-group-item" data-start="12:45"><strong>12:45 PM</strong> <span class="prog-text">Closing Prayer - Rev. Dr. Emmanuel Arthur</span></li>
             </ul>
           </div>
         </div>
       </div>
     </div>
     <div class="row">
-      <div class="col-md-12 text-center" style="margin-top:32px;">
+      <div class="col-md-12 text-center" style="margin-top:50px;">
         <h3 style="color:var(--emerald); font-weight:700; margin-bottom:10px;">Thank you for coming!!</h3>
         <hr class="programme-hr">
       </div>
@@ -300,7 +303,7 @@
     document.addEventListener('DOMContentLoaded', function() {
       var audio = document.getElementById('background-audio');
       if (audio) {
-        audio.volume = 0.10;
+        audio.volume = 0.20; // Set volume to 20%
         // Try to play immediately (may be blocked by browser)
         var playPromise = audio.play();
         if (playPromise !== undefined) {

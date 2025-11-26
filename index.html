@@ -184,7 +184,7 @@
 							<h1>Cephas &amp; Lynda</h1>
 							<h2>We Are Getting Married</h2>
 							<div class="simply-countdown simply-countdown-one"></div>
-							<a href="#" onclick="startAudio();" class="btn btn-default btn-sm">DETAILS</a>
+							<!--<a href="#" onclick="startAudio();" class="btn btn-default btn-sm">DETAILS</a>-->
 						</div>
 					</div>
 				</div>
@@ -533,7 +533,7 @@ $('#simply-countdown-losange').simplyCountdown({
 	document.addEventListener('DOMContentLoaded', function() {
 		var audio = document.getElementById('background-audio');
 		if (audio) {
-			audio.volume = 0.10;
+			audio.volume = 0.20; // Set volume to 20%
 			// Try to play immediately (may be blocked by browser)
 			var playPromise = audio.play();
 			if (playPromise !== undefined) {
